@@ -20,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
         initFruitList(); // 初始化水果数据
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setAdapter(new FruitAdapter(fruitList));
-        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+        LinearLayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
+        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        recyclerView.setLayoutManager(layoutManager);
     }
 
     private void initFruitList() {
