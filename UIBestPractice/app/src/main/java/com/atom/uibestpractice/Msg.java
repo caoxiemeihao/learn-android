@@ -1,7 +1,7 @@
 package com.atom.uibestpractice;
 
 public class Msg {
-    public static final int RECEIVED = 0;
+    public static final int TYPE_RECEIVED = 0;
     public static final int TYPE_SEND = 0;
     private String content;
     private int type;
